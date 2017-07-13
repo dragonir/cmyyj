@@ -1,0 +1,560 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+    margin: 0;
+    padding: 0
+}
+
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+    font-weight: bold;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-weight: normal;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Arial, HelveticaNeue, Helvetica, "BBAlpha Sans", sans-serif;
+}
+
+body {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+p,
+a,
+li,
+span,
+input {
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 0.32rem;
+}
+
+h2 {
+    font-size: 0.34rem
+}
+
+h3 {
+    font-size: 0.3rem
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 0.3rem
+}
+
+h5 {
+    font-size: 0.28rem;
+}
+
+textarea {
+    font-size: 24px;
+}
+
+a {
+    color: #fff
+}
+
+img {
+    vertical-align: top;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+html {
+    font-size: 312.5%;
+}
+
+@media screen and (max-width:359px) and (orientation:portrait) {
+    html {
+        font-size: 266.67%;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:374px) and (orientation:portrait) {
+    html {
+        font-size: 300%;
+    }
+}
+
+@media screen and (min-width:384px) and (max-width:399px) and (orientation:portrait) {
+    html {
+        font-size: 320%;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:413px) and (orientation:portrait) {
+    html {
+        font-size: 333.33%;
+    }
+}
+
+@media screen and (min-width:414px) and (max-width:431px) and (orientation:portrait) {
+    html {
+        font-size: 345%;
+    }
+}
+
+@media screen and (min-width:432px) and (max-width:479px) and (orientation:portrait) {
+    html {
+        font-size: 360%;
+    }
+}
+
+@media screen and (min-width:480px)and (max-width:639px) and (orientation:portrait) {
+    html {
+        font-size: 400%;
+    }
+}
+
+@media screen and (min-width:640px) and (orientation:portrait) {
+    html {
+        font-size: 533.33%;
+    }
+}
+
+
+/*loading如果外面层没有定义宽或高，不可以设置为块*/
+
+.fur-page-loading {}
+
+
+/*如果验证码为滑块验证，最小宽度必须为320px*/
+
+.g-bd {
+    position: relative;
+    width: 4.8rem;
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 0;
+    margin: 0 auto;
+    background: none;
+}
+
+/*.puzzleBg {
+    width: 4.8rem;
+    transform-origin: center left;
+    -webkit-transform-origin: center left;
+    transform: scale(0.94);
+    -webkit-transform: scale(0.94);
+}
+.ScapTcha .slideBg {
+    transform-origin: center left;
+    -webkit-transform-origin: center left;
+    transform: scale(0.91);
+    -webkit-transform: scale(0.91);
+}*/
+
+
+.m-header {
+    display: none;
+}
+
+.m-cnt {
+    padding: 0;
+}
+
+.m-footer {
+    display: none;
+}
+
+
+/*各行间距*/
+
+.fur-change-email {
+    width: auto;
+    height: 0.2rem;
+    overflow: hidden;
+}
+
+.m-cnt .m-pcbox,
+.m-cnt .m-nerror,
+.loginbox {
+    margin-top: 0.15rem;
+}
+
+.f-cb.loginbox{
+    margin-top: 0.25rem;
+}
+
+.m-pcbox{
+    &:after{
+        display: block;
+        height: 0;
+        content: "\0020";
+        clear: both;
+    }
+}
+.inputbox.m-mb.m-pc.f-fl{
+    width: 2.49rem!important;
+}
+
+/*输入框颜色*/
+
+.m-cnt .inputbox {
+    border-color: #f60;
+    
+}
+
+/*输入内容宽度*/
+
+.m-cnt .u-input input {
+    width: 3.7rem;
+    font-size: 0.26rem;
+    /*display: block;*/
+    padding-left: 0.05rem;
+    /*line-height: 0;*/
+    text-align: left;
+    height: 0.5rem;
+    line-height:0.5rem;
+    top: 0.18rem;
+    overflow: hidden;
+    /*padding-top: 0.38rem;*/
+    /*padding-bottom: 0.38rem;*/
+    background: none;
+    position: absolute;
+    left: .4rem;
+    /*top: 0;*/
+}
+.m-cnt .u-input input::-webkit-input-placeholder {
+    line-height:0.5rem;
+}
+
+.m-cnt .m-pc .j-inputtext.pcin{
+    left: 0!important;
+    text-align: center;
+    width: 2.49rem!important;
+    padding-left: 0!important;
+}
+
+
+/*email自动补全*/
+
+.m-cnt .m-sug {
+    width: 4.8rem;
+    box-sizing: border-box;
+}
+
+.m-cnt .m-sug .js-selected,
+.m-cnt .m-sug .itm {
+    /*height:0.8rem;
+    line-height:0.8rem;*/
+    padding-left: 0.2rem !important;
+}
+
+
+/*错误信息提示*/
+
+.m-cnt .m-nerror .ferrorhead,
+.m-cnt .m-nerror .ferrorhead2 {
+    width: auto;
+}
+
+
+/*密码出错过多屏蔽信息*/
+
+.m-cnt .m-etbox {
+    background: none;
+    border: none;
+}
+
+.m-cnt .m-etbox .ettext {
+    width: auto;
+    margin: 0 0.1rem;
+}
+
+
+/*注册按钮*/
+
+.u-loginbtn {
+    background-color: #5084cb;
+    text-indent: -999px;
+    background: url(../img/p2/reg_btn.png) top center no-repeat;
+    background-size: contain;
+    width: 4.84rem;
+    height: 1.45rem;
+}
+
+
+/*登陆验证码*/
+
+.m-cnt .ckin {
+    width: 130px;
+}
+
+.m-cnt #login-form .m-ckcnt .u-label,
+.m-cnt #login-form .m-ckcnt input.cktext,
+.m-cnt #login-form .m-mb .u-label {
+    width: 82px;
+}
+
+.ckbox.m-ckcnt.slidebox.f-cb{
+    margin-top: 8px!important;
+}
+
+/*滑块验证码，如果验证码为滑块验证，最小宽度必须为262px*/
+
+.ScapTcha .slideBg {}
+
+.ScapTcha .statusTxt {
+    left: auto !important;
+    /*right: 0.3rem;*/
+    /*transform-origin: center left;
+    -webkit-transform-origin: center left;*/
+    /*transform: scale(0.94);
+    -webkit-transform: scale(0.94);*/
+}
+
+.ScapTcha .statusTxt .u-success {
+    margin-top: 2px !important;
+}
+
+
+/*帐号安全等级低提示框*/
+
+.w-exception {
+    width: auto;
+    height: auto;
+}
+
+.w-exception .cnt {
+    padding: 0;
+}
+
+.u-btn-middle3 {
+    width: 130px;
+}
+
+#cnt-box {}
+
+.m-cnt .inputbox {
+    border-color: #1f1e1e;
+    border-radius: 3px;
+    background: #e7e5e4;
+    height: .78rem;
+    line-height: .78rem;
+    text-align: center;
+}
+
+#account-box {}
+
+#dologin {
+    width: 100%;
+    -webkit-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+    color: #fff;
+    text-align: center;
+    display: block;
+    background-color: #e42658;
+}
+
+.m-cnt .u-tip {
+    padding: 0 0.1rem;
+}
+
+/*输入框1*/
+.inputbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-pack: left;
+    -moz-box-pack: left;
+    box-pack: left;
+    -webkit-box-align: left;
+    -moz-box-align: left;
+    box-align: left;
+    height: 1rem;
+}
+
+/*输入框1 头像*/
+.m-cnt .u-logo {
+    float:none;
+    display: none;
+}
+
+.m-cnt .u-input {
+    width: auto;
+    width: 4.52rem;
+    height: 0.78rem;
+    margin-top: 0;
+    /*overflow: hidden;*/
+    float: none;
+    position: relative;
+    vertical-align: middle;
+}
+
+.m-cnt .u-input input {
+    max-width: 62%;
+}
+
+.m-cnt .u-tip {
+    float: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /*display: block !important;*/
+}
+.m-cnt .u-label {
+    /*padding-top: 0.32rem;
+    padding-bottom: 0.32rem;*/
+}
+
+.m-cnt #login-form .u-label {
+    display:block;
+    /*width: 2.8rem;
+    font-size: 0.24rem;
+    display: block;
+    padding-left: 0.05rem;
+    height: 1rem;
+    line-height: 0.24rem;
+    height: 0.24rem;
+    padding-top: 0.38rem;
+    padding-bottom: 0.38rem;
+    background: none;*/
+    /*line-height: 0.24rem;
+    height: 0.24rem;
+    padding-top: 0.38rem;
+    color: #d02727;*/
+}
+
+
+
+.ncpt_widget {
+    transform-origin: center left;
+    -webkit-transform-origin: center left;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    z-index: 999;
+}
+/*.ncpt_widget .ncpt_slide_bg {
+    transform: scale(0.99);
+    -webkit-transform: scale(0.99);
+    transform-origin: center left;
+}*/
+
+.ncpt_contents {
+    transform: scale(0.99);
+    -webkit-transform: scale(0.99);
+    transform-origin: center left;
+}
+
+
+.m-cnt .pcbtn a{
+    width: 1.98rem!important;
+    height: .81rem;
+    background: url(../img/p2/yzm.png) no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+}
+
+.m-cnt .u-success{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-top: 0;
+}
+
+.m-cnt .u-input input.dlemail{
+    max-width: 100%!important;
+    text-align: center;
+}
+
+
+*::-webkit-input-placeholder {
+    color: #8b8988!important;
+    font-size: .26rem!important;
+} 
+*:-moz-placeholder {
+    color: #8b8988!important;
+    font-size: .26rem!important;
+} 
+*:-ms-input-placeholder {
+    color: #8b8988!important;
+    font-size: .26rem!important;
+} 
