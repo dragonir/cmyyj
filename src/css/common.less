@@ -1,0 +1,255 @@
+@import "_common_frame.less";
+//设置配色方案
+.dominantText(){//文字主色调,对话框、弹窗顶条、首页导航、菜单、按钮
+   color:#fff;
+   a{
+       color:#fff;
+   }
+}
+.dominantBg(){//背景主色调,对话框、弹窗顶条、菜单、按钮
+   
+   background-color:#38a3fa;
+}
+
+//内页顶条通条
+.header{
+     background: #72bdff;
+     color: #fff;
+     a{
+         
+       
+           i{
+               border-color: #fff;
+           }
+       
+     }
+}
+nav{
+    ul{
+        .dominantBg();
+        .dominantText();
+    }
+}
+//首页顶条
+.topbar{ 
+    background: #0f64aa;
+    .logo{
+        background: url(http://webinput.nie.netease.com/img/my/icon.png/128) no-repeat;
+        display: block;
+        width: 0.81rem;
+        height: 0.81rem;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        background-size: cover;
+        margin: 0.1rem 0.2rem 0.1rem 0.25rem;
+        border-bottom: none;
+    }
+    a{
+        display: none;
+        background: #c1efff;
+        color: #178ae7;
+        border-color:#fff;
+      
+    }
+    .game_name{
+        h2{
+            color: #fff;
+            font-size: .3rem;
+            em{
+                font-style: normal;
+                position: relative;
+                i{
+                    font-style: normal;
+                    font-size: .2rem;
+                    color: #0b7fc0;
+                    border-radius: .05rem;
+                    display: inline-block;
+                    vertical-align: middle;
+                    line-height: .26rem;
+                    position: absolute;
+                    top: 50%;
+                    height: .26rem;
+                    margin-top: -.12rem;
+                    left: 115%;
+                    width: .51rem;
+                    text-align: center;
+                    background: url(../img/sy_icon.png) no-repeat;
+                    background-size: 100%;
+                    text-indent: -100rem;
+                }
+            }
+        }
+        p{
+            color: #fff;
+            font-size: .24rem;
+
+        }
+    }
+    &.download_bar{//内页下载条
+        background: #424a55;
+        h1{
+            color: #fff;
+        }
+       
+        a{
+            background: #fff;
+            color:#1583e4;
+        }
+    }
+
+}
+.i_arrow{//指针图片，默认向右
+    i{ border-color: #b5b5b5;}
+}
+.list_view{//列表样式
+    li {
+        &:nth-child(2n+1){
+            background: #fff;
+        }
+        &:nth-child(2n+2){
+            background: #eff8ff;
+        }
+        em{
+           color:#999999
+        }
+    }
+}
+.site_bottom{//通用底部样式
+    background: #424a55;
+    border-bottom-color: #000;
+    p,a,h3{
+        color: #ebeff4;
+    }
+    .button{
+        color: #424a55;
+        background-color: #ffc324;
+         display: none;
+    }
+    
+    ul{
+        li{
+            border-color: #87939c;
+        }
+    }
+    .NIE-copyRight_m{
+        background: #202b35;
+    }
+}
+
+.btn_getmore{//获取更多按钮样式
+    background: #ddd;
+}
+.i_menu{//菜单样式
+    em{
+        background: #fff;
+        b{
+            background: #fff;
+        }
+    }
+}
+.btn_menu{
+    &.active{
+        background: #38a3fa;
+    }
+}
+#NIE-share-m .NIE-mshare-dark {//覆盖分享条默认样式
+    background: transparent;
+}
+#NIE-share-m .NIE-mshare-dark .NIE-share-bar a{
+    .dominantBg();
+    border-width:0;
+}
+#md_attention .attention i{
+    .dominantBg();
+    .dominantText()
+}
+.refer_insetapp{//微信中分享提示框样式
+     
+     p{
+         color: #fff;
+     }
+   }
+.alert_text{
+    background: #fff;
+     border:0.1rem solid #aaa;
+     color: #007AFF;
+        p{
+            color: #333;
+        }
+   .btn_close{
+       em,i{ background: #007AFF;}
+   }
+}
+.popWin{
+    section{
+        
+        background: #fefefe;
+        .popWin_header{
+             .dominantBg();
+            .dominantText();
+            
+        }
+        .popWin_content{
+            h1{
+                color: #22a0f0;
+            }
+            h2{
+                color: #333;
+            }
+            p{
+                color: #757575;
+            }
+        }
+    }
+    
+}
+.form_bar{
+    input{
+        border-color:#ddd ;
+    }
+    a{
+        .dominantBg();
+        .dominantText();
+    }
+}
+.btn_common{
+    .dominantBg();
+    .dominantText();
+    
+}
+.btn_black{
+        background: #000000;
+        color: #fff;
+    }
+.btn_blue{
+    .dominantBg();
+    .dominantText();
+}
+.form{
+     dl{
+        
+        border-color:#bababa;
+        
+        dt{
+         
+           border-color:#ddd;
+            color:#bababa;
+            
+        }
+    }
+}
+.btn_toTop{
+    border:1px solid #424a55;
+    background: transparent;
+    i{
+        
+            border-color: #424a55;
+        
+    }
+}
+
+[v-cloak]{
+    display: none;
+}
+
